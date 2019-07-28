@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import Header from "./components/Header";
+import InputBar from "./components/inputBar";
 export default class HelloWorld extends Component {
   constructor() {
     super();
@@ -19,6 +20,7 @@ export default class HelloWorld extends Component {
       <View style={styles.container}>
         {statusbar}
         <Header title="TODO" />
+        <InputBar />
       </View>
     );
   }
